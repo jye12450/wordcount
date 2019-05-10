@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+<html>
+<body style="background-color: lightgray">
+    <div>
+        <div class="haeder" role="banner">
+            <div class="c" align="right" >
+                <h1><font color="black"><i class="fas fa-file-word"></i>                    About this Program</h1>
+                <form action = "{%url 'about'%}">
+                    <input type="submit" class="btn btn-dark" value="About">
+                </form>
+            </div>
+        </div>  
+        <center>    
+            <div class="a">
+                <h1><font color="black"><i class="fas fa-cubes"></i> Wordcount program</h1>
+                <form action = "{%url 'result'%}">
+                    <label for="colFormLabelLg" class="col-lg-10 col-form-label col-form-label-lg"><i class="fas fa-sort-down"></i> Word Input <i class="fas fa-sort-down"></i></label><br>
+                    <div class="col-lg-10">
+                        <textarea SYTLE="FONT-SIZE:20PX;" name="text" class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Give me words"></textarea>
+                    </div>
+                    <br><input type="submit" class="btn btn-dark" value="Split">
+                </form>
+            </div>
+        </center>
+        
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+    textarea {
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid black;
+    }
+    div.a {
+        border : 10px solid transparent;
+        border-width : 100Px;
+        position: relative;
+        top: 1;
+        background-color: lightgrey;
+        
+    }
+    div.b {
+        position: relative;
+        top: 0;
+        font: 30px arial, sans-serif;
+        left: 0;
+        width: 700px;
+        height: 70px;
+    }
+    div.c {
+    padding-top:10px;
+    padding-right: 30px;
+    background-color: darkgray;
+    height: 130px;
+    } 
+    body {
+        background-image: url("/bg-masthead.png");
+        font-family: 'Do Hyeon', sans-serif;
+    }
+    
+</style>
